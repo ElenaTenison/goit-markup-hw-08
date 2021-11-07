@@ -543,7 +543,8 @@ body {
 }
 
 .hero__btn {
-  padding: 10px 32px;
+  padding: 10px 31px;
+  text-align: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 200px;
   height: 50px;
@@ -607,6 +608,13 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list__item {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .advantages-list__link {

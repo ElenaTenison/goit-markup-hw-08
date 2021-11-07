@@ -40,6 +40,11 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .advantages-list__link {
