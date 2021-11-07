@@ -25,7 +25,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 354px;
-    flex-basis: calc(100% / 2);
+    flex-basis: calc(100% / 2 - 30px);
   }
 
   @media screen and (min-width: 1200px) {
@@ -41,10 +41,10 @@
   text-transform: uppercase;
   color: var(--secondary-title-color);
 
-  @media screen and (max-width: 767px) {
-    margin: 0 auto;
-    text-align: center;
-  }
+  //   @media screen and (max-width: 767px) {
+  //     margin: 0 auto;
+  //     text-align: center;
+  //   }
 }
 
 .advantages-list__link {
