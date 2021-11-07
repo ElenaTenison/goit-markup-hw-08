@@ -566,7 +566,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: -30px;
     margin-top: -30px;
   }
 }
@@ -574,7 +573,6 @@ body {
 .advantages-list__card {
   margin: 0 auto;
   max-width: 450px;
-  margin-left: 30px;
   margin-top: 30px;
 }
 
