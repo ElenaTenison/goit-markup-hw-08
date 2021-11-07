@@ -588,7 +588,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 354px;
-    flex-basis: calc(100% / 2 - 30px);
+    flex-basis: calc(100% / 2);
   }
 }
 
