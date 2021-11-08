@@ -27,7 +27,7 @@
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-title-color);
 
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
     &:last-child {
       margin-bottom: 0px;
@@ -40,7 +40,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+    // margin-right: 30px;
     @include last-four(1) {
       margin-right: 0px;
     }
@@ -59,11 +60,11 @@
 .team-list__content {
   padding: 30px 30px;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    width: 354px;
-    flex-basis: calc(100% / 2 - 30px);
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    @include last-four(1) {
+      margin-right: 0px;
+    }
   }
 }
 
