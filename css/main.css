@@ -968,12 +968,53 @@ body {
   align-items: baseline;
 }
 
+@media (min-width: 767px) {
+  .footer__info {
+    display: flex;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .footer__info {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__info {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
 .footer__contact:last-child {
   margin-left: auto;
 }
 
 .footer__contact:not(:last-child) {
   margin-right: 70px;
+}
+
+@media (max-width: 767px) {
+  .footer__contact {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer__contact {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__contact {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
 }
 
 .footer__social-title {
@@ -984,8 +1025,29 @@ body {
   color: var(--secondary-text-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .footer__social-title {
+    text-align: center;
+  }
+}
+
 .footer-social-list {
   max-width: 200px;
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-social-list {
+    margin-bottom: 60px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-list {
+    margin-right: 90px;
+    justify-content: center;
+  }
 }
 
 .footer-social-list__link {
@@ -1004,6 +1066,20 @@ body {
 
 .singup-wrap__form {
   display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .singup-wrap__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .singup-wrap__form {
+    display: flex;
+  }
 }
 
 .singup-wrap__input {
@@ -1033,6 +1109,18 @@ body {
 .singup-wrap__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .singup-wrap__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .singup-wrap__input {
+    width: 358px;
+  }
 }
 
 .singup-wrap__btn {
