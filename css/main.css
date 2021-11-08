@@ -606,6 +606,13 @@ body {
   color: var(--secondary-title-color);
 }
 
+@media screen and (max-width: 767px) {
+  .advantages-list__item {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 .advantages-list__link {
   font-weight: 400;
   line-height: 1.71;
@@ -674,22 +681,51 @@ body {
   background: var(--bg-color);
 }
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: -30px;
-  margin-top: -30px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-list {
+    display: flex;
+  }
 }
 
 .team-list__card {
-  max-width: 270px;
-  margin-left: 30px;
-  margin-top: 30px;
   flex-basis: calc(100% / 4 - 30px);
+  width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-title-color);
+}
+
+@media (max-width: 767px) {
+  .team-list__card {
+    margin-bottom: 30px;
+  }
+  .team-list__card:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__card {
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__card {
+    margin-right: 30px;
+  }
+  .team-list__card:nth-last-child(4n + 1) {
+    margin-right: 0px;
+  }
 }
 
 .team-list__item {
@@ -702,6 +738,7 @@ body {
 }
 
 .team-list__content {
+  width: 354px;
   padding: 30px 30px;
 }
 
