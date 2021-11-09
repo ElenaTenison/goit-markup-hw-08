@@ -42,8 +42,11 @@
 .footer__info {
   display: flex;
   align-items: baseline;
+  flex-direction: column;
+  
   @media (min-width: 767px) {
     display: flex;
+    flex-direction: row;
   }
   @media (min-width: 767px) and (max-width: 1199px) {
     flex-wrap: wrap;
@@ -66,6 +69,7 @@
   @media (max-width: 767px) {
     width: 100%;
     margin-bottom: 60px;
+    
   }
   @media (max-width: 1199px) {
     text-align: center;
@@ -91,6 +95,7 @@
 .footer-social-list {
   max-width: 200px;
   display: flex;
+  
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
     justify-content: center;
@@ -103,6 +108,7 @@
 
 .footer-social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
 }
 
 .footer-social-list__icon {
