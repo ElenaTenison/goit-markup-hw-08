@@ -11,6 +11,10 @@
 }
 
 .header__navigation {
+  @media (max-width: 767px) {
+    justify-content: space-between;
+    
+  }
   @include align();
   & .logo {
     margin-right: 93px;
@@ -27,6 +31,8 @@
 .header__logo {
   color: #000000;
 }
+
+
 
 .header-contact {
   display: flex;
