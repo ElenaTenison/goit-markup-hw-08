@@ -38,12 +38,11 @@
   }
 }
 
-
 .footer__info {
   display: flex;
   align-items: baseline;
   flex-direction: column;
-  
+
   @media (min-width: 767px) {
     display: flex;
     flex-direction: row;
@@ -69,7 +68,6 @@
   @media (max-width: 767px) {
     width: 100%;
     margin-bottom: 60px;
-    
   }
   @media (max-width: 1199px) {
     text-align: center;
@@ -93,9 +91,9 @@
 }
 
 .footer-social-list {
-  max-width: 200px;
+  // max-width: 200px;
   display: flex;
-  
+
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
     justify-content: center;
@@ -128,7 +126,6 @@
 
   @media screen and (max-width: 1199px) {
     display: flex;
-    
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -174,7 +171,7 @@
 
 .singup-wrap__btn {
   padding: 10px 28px;
-  
+
   &:hover,
   &:focus {
     background-color: #188ce8;
