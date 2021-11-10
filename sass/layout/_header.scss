@@ -93,14 +93,12 @@
   }
 }
 
-
-
 .header-contact__item {
   color: #757575;
   &:hover,
   &:focus {
     color: var(--accent-color);
-
+  }
   &:not(last-child) {
     @media screen and (max-width: 1199px) {
       margin-bottom: 10px;
@@ -112,6 +110,9 @@
 }
 
 .header-contact__link {
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
