@@ -139,5 +139,8 @@
   border-radius: 2px;
   background-color: var(--accent-color);
   display: block;
-  bottom: -10px;
+  bottom: -1px;
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
 }

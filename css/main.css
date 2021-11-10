@@ -234,9 +234,15 @@ body {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.social-nav__item:first-child {
+  margin-right: 0px;
+  margin-left: 0px;
+  border-right: none;
+}
+
 .social-nav__item:last-child {
   margin-right: 0px;
-  padding-right: 0px;
+  margin-left: 0px;
   border-right: none;
 }
 
@@ -780,7 +786,13 @@ body {
   border-radius: 2px;
   background-color: var(--accent-color);
   display: block;
-  bottom: -10px;
+  bottom: -1px;
+}
+
+@media screen and (max-width: 767px) {
+  .current::after {
+    display: none;
+  }
 }
 
 .hero {
