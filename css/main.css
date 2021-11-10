@@ -165,6 +165,18 @@ body {
   color: var(--accent-color);
 }
 
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contacts-list {
+  margin-bottom: 64px;
+}
+
 .mobile-menu-tel {
   font-size: 34px;
   font-weight: 500;
@@ -206,7 +218,6 @@ body {
 .social-nav {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 64px;
 }
 
 .social-nav__item {
